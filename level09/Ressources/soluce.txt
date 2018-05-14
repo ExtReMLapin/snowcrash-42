@@ -1,0 +1,19 @@
+
+On a un executable qui prend une string
+
+ca echo str[i] = str[i] + i
+
+Et dans token on a une sorte de clée de 25char, comme les autres flags, donc à 1ere vue je dirais qu'on doit reverse le process et que c'est une clée qui a été passée dans l'exec
+
+f4kmm6p|=‚p‚nƒ‚DBƒDu{Œ‰
+
+Donc pour chaque char on fait sa value = sa value - son adr par rapport à la 1ere lettre de la string
+
+on on tombe sur f3iji1ju5yuevaus41q1afiuq
+
+level09@SnowCrash:~$ su flag09
+Password:
+Don't forget to launch getflag !
+flag09@SnowCrash:~$ getflag
+Check flag.Here is your token : s5cAJpM8ev6XHw998pRWG728z
+

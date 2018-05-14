@@ -1,0 +1,21 @@
+En décompilait avec IDA Pro, toujours la même technique
+
+On voit un gros check assez dégeux :
+
+if ( strstr(argv[1], "token") )
+  {
+    printf("You may not access '%s'\n", argv[1]);
+    exit(1);
+  }
+
+
+Il suffit de faire un lien symbolique dans /tmp/ et d'utiliser level08 dessus
+
+level08@SnowCrash:~$ ./level08 /tmp/flag08
+quif5eloekouj29ke0vouxean
+
+level08@SnowCrash:~$ su flag08
+Password:
+Don't forget to launch getflag !
+flag08@SnowCrash:~$ getflag
+Check flag.Here is your token : 25749xKZ8L7DkSCwJkT9dyv6f

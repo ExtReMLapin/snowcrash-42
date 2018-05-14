@@ -1,0 +1,25 @@
+On sait d'après la vidéo d'intro que on droit trouver le premier fichier que flag00 peut excecuter
+
+find / -user flag00  2>/dev/null
+
+2>/dev/null  c'est pour dégager les errors
+
+
+C'est pas un executable mais du texte ;)
+
+cdiiddwpgswtgt
+
+ne marche pas sur su flag00 donc on try avec un caesar decoder et on trouve 
+
+nottoohardhere
+
+et le getflag une fois connécté a la session flag00 ca nous donne x24ti5gi3x0ol2eh4esiuxias
+
+level00@SnowCrash:~$ cat /usr/sbin/john
+cdiiddwpgswtgt
+level00@SnowCrash:~$ su flag00
+Password:
+Don't forget to launch getflag !
+flag00@SnowCrash:~$ getflag
+Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias
+flag00@SnowCrash:~$
