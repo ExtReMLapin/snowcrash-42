@@ -1,4 +1,4 @@
-On choppe le fichier level07 avec scp pour le décompiler avec IDA Pro,
+On choppe le fichier level07 avec scp pour le décompiler avec IDA Pro/retdec,
 
 Dans le main on voit : 
 
@@ -10,7 +10,7 @@ Dans le main on voit :
   On sait que par exemple : 
   /bin/echo $(ls)
 
-  Permet de grosso run ls avec echo, on a juste a faire pareil ... mais pour getflag
+  Permet de run ls avec echo, on a juste a faire pareil ... mais pour getflag
 
 	level07@SnowCrash:~$ export LOGNAME=$\(getflag\)
 	level07@SnowCrash:~$ ./level07

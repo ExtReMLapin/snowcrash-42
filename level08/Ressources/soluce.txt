@@ -1,4 +1,4 @@
-En décompilait avec IDA Pro, toujours la même technique
+En décompilait avec IDA Pro/retdec, toujours la même technique
 
 On voit un gros check assez dégeux :
 

@@ -1,4 +1,3 @@
-
 On a un executable qui prend une string
 
 ca echo str[i] = str[i] + i

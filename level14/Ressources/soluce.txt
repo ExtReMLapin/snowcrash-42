@@ -24,12 +24,7 @@ level14:2014
 flag14:3014
 
 
-On ca donc faire genre qu'on est l'UID 3014
-
-3014 en hex c'est 0xBC6
-
 Donc avec un petit ctrl+f dans le fichier dsm laissé en resource on trouve : 
-
 
 Que la clée encodée de la session flag14 est : "g <t61:|4_|!@IF.-62FH&G~DCK/Ekrvvdwz?v|"
 

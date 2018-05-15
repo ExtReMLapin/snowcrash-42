@@ -4,7 +4,7 @@ Bon ca va être galère de le cheat donc on va juste recompiler le soft sans les
 
 https://retdec.com/decompilation/
 
-Bon pour le résultat c'est dans main.c et ft_des.c/better_ft_des.c
+Bon pour le résultat c'est dans main.c et ft_des.c on compile les deux on lance a.out et ca nous donne la clée
 
 3 warnings generated.
 your token is 2A31L79asukciNyi8uppkEuSx
