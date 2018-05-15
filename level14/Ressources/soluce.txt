@@ -1,0 +1,63 @@
+Bon, j'ai rien trouvé avec la commande find donc on va juste cracker getflag, pas envie de passer 20mins à chercher.
+
+level14@SnowCrash:~$ type -a getflag
+getflag is /bin/getflag
+
+Donc on le récupère avec toujours la petite commande :
+
+scp -P 4242 -r level14@192.168.1.17:/bin/getflag .
+
+En utilisant retdec on voit que il nous dit de la merde.
+
+Tous simplement car y'a pas d'appel de ft_des.
+
+
+En regardenant le code en ASM (ou pas).
+
+On voit que comme l'éxo précédant on cherche qqchose de lié à l'UID donc on va déjà tous les chopper, histoire de pas faire du caca
+
+
+avec : 
+
+level14@SnowCrash:/proc/self$ awk -F: '{printf "%s:%s\n",$1,$3}' /etc/passwd | grep 14
+level14:2014
+flag14:3014
+
+
+On ca donc faire genre qu'on est l'UID 3014
+
+3014 en hex c'est 0xBC6
+
+Donc avec un petit ctrl+f dans le fichier dsm laissé en resource on trouve : 
+
+
+Que la clée encodée de la session flag14 est : "g <t61:|4_|!@IF.-62FH&G~DCK/Ekrvvdwz?v|"
+
+Sauf que forcément ... elle est carément plus grande que les autres... Donc pas moyen avec un éditeur exa de copier/coller dans une autre.
+
+J'aurais pu patcher l'executable avec IDA Pro , ca aurais été style toussa toussa mais j'ai la flemme de setup une vm lors de la correction pour le refaire.
+
+Donc on va juste recompiler ft_desc.c avec le code que nous a généré retdec avec la clée qu'on a trouvé.
+
+
+
+pierr@DESKTOP-51DTB06:/mnt/c/snowcrash-42/level14/Ressources$ clang main.c && ./a.out
+main.c:12:20: warning: implicit declaration of function 'ft_des' is invalid in C99 [-Wimplicit-function-declaration]
+    printf("%s\n", ft_des("g <t61:|4_|!@IF.-62FH&G~DCK/Ekrvvdwz?v|"));
+                   ^
+main.c:12:20: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    printf("%s\n", ft_des("g <t61:|4_|!@IF.-62FH&G~DCK/Ekrvvdwz?v|"));
+            ~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            %d
+main.c:27:21: warning: cast to 'char *' from smaller integer type 'int' [-Wint-to-pointer-cast]
+        char * v4 = (char *)(v3 + (int32_t)"0123456");
+                    ^
+main.c:33:29: warning: cast to 'char *' from smaller integer type 'int' [-Wint-to-pointer-cast]
+                char * v7 = (char *)(v1 + result); // 0x80486aa_0
+                            ^
+main.c:69:26: warning: cast to 'char *' from smaller integer type 'int' [-Wint-to-pointer-cast]
+            char * v10 = (char *)(v1 + result); // 0x8048654_0
+                         ^
+5 warnings generated.
+7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
+

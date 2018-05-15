@@ -13,7 +13,7 @@ abcdefg          (flag01)
 Use the "--show" option to display all of the cracked passwords reliably
 Session completed
 
-le mdr de la session flag01 est alors abcdefg
+le mdp de la session flag01 est alors abcdefg
 
 level01@SnowCrash:~$ su flag01
 Password:
