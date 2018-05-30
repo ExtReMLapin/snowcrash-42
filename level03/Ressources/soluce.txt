@@ -1,7 +1,7 @@
 
 Bon on va chopper le fichier comme on avait fait pour l'éxo d'avant
 
-En l'ouvrant avec IDA on trouve :  return system("/usr/bin/env echo Exploit me");
+En l'ouvrant avec RETDEC on trouve :  return system("/usr/bin/env echo Exploit me");
 
 En gros ca execute la commande /usr/bin/env echo Exploit me
 
