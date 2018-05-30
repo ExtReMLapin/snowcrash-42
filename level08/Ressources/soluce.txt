@@ -1,4 +1,4 @@
-En décompilait avec IDA Pro/retdec, toujours la même technique
+En décompilait avec retdec, toujours la même technique
 
 On voit un gros check assez dégeux :
 
@@ -9,10 +9,16 @@ if ( strstr(argv[1], "token") )
   }
 
 
+
+
 Il suffit de faire un lien symbolique dans /tmp/ et d'utiliser level08 dessus
 
-level08@SnowCrash:~$ ./level08 /tmp/flag08
+level08@SnowCrash:~$ cd /tmp/
+level08@SnowCrash:~$ ln -s /home/user/level08/token dodo
+level08@SnowCrash:/tmp$ cd ~/
+level08@SnowCrash:~$ ./level08 /tmp/dodo
 quif5eloekouj29ke0vouxean
+
 
 level08@SnowCrash:~$ su flag08
 Password:

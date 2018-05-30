@@ -11,7 +11,10 @@ D'après le code ca a l'air de run tous ce qu'il y a dans /opt/openarenaserver/*
 
 J'ai pas les droits X dessus mais bon on va le faire avec bash /usr/sbin/openarenaserver
 
-Donc je met un scripts dedans avec : echo `getflag` > /tmp/42.txt
+Donc je met un scripts dedans avec : 
+
+#!/bin/sh
+echo `getflag` > /tmp/42.txt
 
 je le run et ensuite
 

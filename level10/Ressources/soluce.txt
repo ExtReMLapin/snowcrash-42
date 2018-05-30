@@ -25,7 +25,9 @@ do
 done
 
 
-On spam comme des cons et ca nous donne un truc du genre : 
+On spam comme des cons et ca nous donne un truc du genre avec un 3eme terminal :
+
+$ nc -lk   6969
 
 
 .*( )*.

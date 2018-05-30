@@ -3,7 +3,7 @@
 #include <stdbool.h>
 
 
-int32_t ft_des(char * str) {
+   int32_t ft_des(char * str) {
     char * str2 = strdup(str); // 0x8048481
     int32_t result = (int32_t)str2; // 0x8048481_3
     if (strlen(str2) == 0) {
@@ -89,3 +89,4 @@ int32_t ft_des(char * str) {
     // 0x8048583
     return result;
 }
+

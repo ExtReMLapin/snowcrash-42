@@ -2,7 +2,6 @@
 #include <sys/types.h>
 #include <stdio.h>
 
-char *__cdecl ft_des(char *s);
 
 int main(int argc, char ** argv) {
     // 0x804858c
