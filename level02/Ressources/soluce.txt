@@ -3,7 +3,11 @@ On trouve un fichier pcap dans le dossier home
 
 /home/user/level02/level02.pcap
 
-J'utilise tcpick (merci google) pour analyser la capture
+On va installer tcpick sur une VM
+
+
+
+J'utilise tcpick -C -yU -r level02.pcap (merci google) pour analyser la capture
 
 Ce qui me donne : 
 

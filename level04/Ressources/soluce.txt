@@ -9,3 +9,5 @@ Donc comme l'exo d'avant, l'idée est de faire executer par le script perl la co
 
  Check flag.Here is your token : ne2searoevaevoem4ov4ar8ap
 
+ et revient à faire un echo `getflag` sur la session flag04
+

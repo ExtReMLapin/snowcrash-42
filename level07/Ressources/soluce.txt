@@ -12,6 +12,6 @@ Dans le main on voit :
 
   Permet de run ls avec echo, on a juste a faire pareil ... mais pour getflag
 
-	level07@SnowCrash:~$ export LOGNAME=$\(getflag\)
+	level07@SnowCrash:~$ export LOGNAME=\`getflag\`
 	level07@SnowCrash:~$ ./level07
 	Check flag.Here is your token : fiumuikeil55xe9cu4dood66h

@@ -19,5 +19,7 @@ A 1ere vue il faut executer le script php avec level06, il prend en argument un 
 
 	On quand on le lance dessus on a : 
 
+	ca erreur en traitant la variable comme une commande
+
 	PHP Notice:  Undefined variable: Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub
  in /home/user/level06/level06.php(4) : regexp code on line 1

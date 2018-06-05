@@ -14,7 +14,9 @@ J'ai pas les droits X dessus mais bon on va le faire avec bash /usr/sbin/openare
 Donc je met un scripts dedans avec : 
 
 #!/bin/sh
-echo `getflag` > /tmp/42.txt
+getflag > /tmp/42.txt
+
+
 
 je le run et ensuite
 

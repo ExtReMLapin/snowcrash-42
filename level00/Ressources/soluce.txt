@@ -9,7 +9,7 @@ C'est pas un executable mais du texte ;)
 
 cdiiddwpgswtgt
 
-ne marche pas sur su flag00 donc on try avec un caesar decoder et on trouve 
+ne marche pas sur su flag00 donc on try avec un caesar decoder ( https://www.dcode.fr/chiffre-cesar ) et on trouve 
 
 nottoohardhere
 
