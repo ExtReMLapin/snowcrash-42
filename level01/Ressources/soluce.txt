@@ -2,7 +2,7 @@ On fait choppe le /etc/passwd
 
 On voit que flag01 a un hash de password : flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
 
-J'installe john the ripper pour macos et je le run sur le fichier que j'ai copié sur macos 
+J'installe john the ripper pour macos et je le run sur le fichier que j'ai copié sur macos ou sur une autre vm
 
 
 e2r8p14% ./john ~/Desktop/snowcrash/level01/Ressources/passwd

