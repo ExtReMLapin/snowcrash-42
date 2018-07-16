@@ -1,3 +1,3 @@
 # snowcrash-42
 
-![](https://i.imgur.com/n5YWUrp.png)
+![](https://i.imgur.com/NdFk6jU.png)
